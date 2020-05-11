@@ -3,6 +3,7 @@
   <head>
     <title>Should I...</title>
     <link rel="stylesheet" type="text/css" href="dark.css" />
+    <!-- linking the document to the correct (light mode) stylesheet -->
   </head>
 
   <body>
@@ -17,17 +18,19 @@
       <br />
       <br />
     </div>
-
+    <!-- Adding the headers, with line breaks -->
     <div>
       <center><button onclick="lip();">Find your answer now</button></center>
       <br /><br />
+      <!-- this button activates the script -->
       <center>
         <p><a href="index.html">Use light mode</a></p>
       </center>
-
+      <!-- this anchor tag disguised as a button switches to the dark mode page -->
       <script>
         function lip() {
           prompt("What is your question?", "Should I...");
+          // prompting the user to insert their question (not that it matters what they input 🤣)
           var lis = [
             "Well...",
             "Maybe",
@@ -38,14 +41,15 @@
             "Flip a coin.",
             "How long is a piece of string?",
           ];
-
+          // possible outcomes
           function findRandomNumberUpTo(number) {
             return Math.floor(Math.random() * number);
           }
-
+          // a convenient random number function
           var i = findRandomNumberUpTo(8);
-
+          // giving us the random number
           alert(lis[i]);
+          // displaying the chosen output to the user
         }
       </script>
     </div>
