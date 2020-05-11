@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lines of Inquiry</title>
+    <title>Should I...</title>
     <link rel="stylesheet" type="text/css" href="dark.css" />
   </head>
 
   <body>
     <div>
-      <h1>Pick the Line of Inquiry that you will listen to!</h1>
+      <h1>Get answers for all your questions!</h1>
       <br />
-      <center><h2>The LIP 2000!</h2></center>
+      <center>
+        <h2>
+          Just ask...
+        </h2>
+      </center>
       <br />
       <br />
     </div>
 
     <div>
-      <center><button onclick="lip();">Which line of inquiry?</button></center>
-      <br />
+      <center><button onclick="lip();">Find your answer now</button></center>
+      <br /><br />
       <center>
         <p><a href="index.html">Use light mode</a></p>
       </center>
 
       <script>
         function lip() {
+          prompt("What is your question?", "Should I...");
           var lis = [
-            "What the components of spacecraft are like",
-            "Different  ways to innovate aircrafts connect to better ways of enjoying aircraft travel",
-            "How changes in spacecraft design affect spacecraft travel",
-            "How aircraft are designed and work",
+            "Well...",
+            "Maybe",
+            "What do you think?",
+            "It's a good question.",
+            "Hmmm...",
+            "About that...",
+            "Flip a coin.",
+            "How long is a piece of string?",
           ];
 
           function findRandomNumberUpTo(number) {
             return Math.floor(Math.random() * number);
           }
 
-          var i = findRandomNumberUpTo(4);
+          var i = findRandomNumberUpTo(8);
 
           alert(lis[i]);
         }
