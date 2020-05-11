@@ -1,24 +1,24 @@
 body {
-  background-color: azure;
+  background-color: darkslategrey;
 }
 
 h1 {
-  background-color: azure;
+  background-color: darkslategrey;
   font-weight: bold;
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-align: center;
-  color: cadetblue;
+  color: azure;
   display: block;
   margin: none;
   padding: 15px 32px;
 }
 
 h2 {
-  background-color: cadetblue;
+  background-color: azure;
   font-weight: bold;
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-align: center;
-  color: azure;
+  color: cadetblue;
   display: inline-block;
   margin: none;
   padding: 20px 40px;
